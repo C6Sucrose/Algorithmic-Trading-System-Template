@@ -1,0 +1,9 @@
+# Include base requirements
+-r requirements.txt
+
+# Additional development tools
+pre-commit>=3.3.0
+bandit>=1.7.0
+safety>=2.3.0
+autopep8>=2.0.0
+isort>=5.12.0
