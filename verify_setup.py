@@ -30,11 +30,11 @@ def main():
         # Test strategy configuration
         mean_rev = config.get_strategy_config('mean_reversion')
         if mean_rev:
-            print(f"✓ Mean reversion strategy configured")
+            print("✓ Mean reversion strategy configured")
         
         pairs = config.get_strategy_config('pairs_trading')
         if pairs:
-            print(f"✓ Pairs trading strategy configured")
+            print("✓ Pairs trading strategy configured")
         
         print("=" * 50)
         print("SUCCESS: Environment setup complete!")

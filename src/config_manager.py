@@ -48,12 +48,17 @@ class ConfigManager:
     def _apply_env_overrides(self, config: Dict[str, Any]) -> None:
         """Apply environment variable overrides to configuration."""
         # IBKR Configuration
-        if os.getenv('IBKR_HOST'):
-            config['IBKR_HOST'] = os.getenv('IBKR_HOST')
-        if os.getenv('IBKR_PORT'):
-            config['IBKR_PORT'] = int(os.getenv('IBKR_PORT'))
-        if os.getenv('IBKR_CLIENT_ID'):
-            config['IBKR_CLIENT_ID'] = int(os.getenv('IBKR_CLIENT_ID'))
+        ibkr_host = os.getenv('IBKR_HOST')
+        if ibkr_host:
+            config['IBKR_HOST'] = ibkr_host
+        
+        ibkr_port = os.getenv('IBKR_PORT')
+        if ibkr_port:
+            config['IBKR_PORT'] = int(ibkr_port)
+        
+        ibkr_client_id = os.getenv('IBKR_CLIENT_ID')
+        if ibkr_client_id:
+            config['IBKR_CLIENT_ID'] = int(ibkr_client_id)
     
     def get(self, key: str, default: Any = None) -> Any:
         """Get configuration value by key."""
@@ -86,7 +91,8 @@ class ConfigManager:
             'max_monthly_drawdown': self.get('MAX_MONTHLY_DRAWDOWN', 0.10),
             'max_risk_per_trade': self.get('MAX_RISK_PER_TRADE', 0.01),
             'max_position_size': self.get('MAX_POSITION_SIZE', 0.05),
-            'max_concurrent_positions': self.get('MAX_CONCURRENT_POSITIONS', 20)
+            'max_concurrent_positions': self.get('MAX_CONCURRENT_POSITIONS', 20),
+            'stop_loss_pct': self.get('MEAN_REVERSION', {}).get('STOP_LOSS_PCT', 0.02)
         }
     
     def get_strategy_config(self, strategy_name: str) -> Dict[str, Any]:

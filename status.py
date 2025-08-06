@@ -6,7 +6,6 @@ Displays the current status of the algorithmic trading system setup.
 """
 
 import sys
-import os
 from pathlib import Path
 from datetime import datetime
 
