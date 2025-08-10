@@ -206,20 +206,7 @@ pytest tests/ --cov=src --cov-report=html
 - Strategy validation
 - Risk management verification
 
-## 📚 Documentation
-
-- [System Design Document](System_Design_Document.md) - Complete technical specifications
-- [Work Breakdown Structure](WBS.md) - Project phases and tasks
-- API documentation (auto-generated)
-- Strategy guides and tutorials
-
 ## 🚨 Important Notes
-
-### Security
-- Never commit credentials to git
-- Use environment variables for sensitive data
-- Enable 2FA on IBKR account
-- Regular security audits
 
 ### Compliance
 - Start with paper trading
@@ -229,14 +216,6 @@ pytest tests/ --cov=src --cov-report=html
 
 ### Risk Disclaimer
 This system is for educational and research purposes. Trading involves substantial risk of loss. Past performance does not guarantee future results. Only trade with capital you can afford to lose.
-
-## 📞 Support
-
-For questions or issues:
-1. Check the documentation
-2. Review existing issues in the repository
-3. Create a new issue with detailed description
-4. Include system logs and configuration (without credentials)
 
 ## 📄 License
 
