@@ -1,11 +1,13 @@
-# Algorithmic Trading System
+# Algorithmic Trading System Template
 
-A comprehensive algorithmic trading system targeting €50 daily profit using mean-reversion and pairs trading strategies with Interactive Brokers.
+A comprehensive algorithmic trading system template targeting €50 daily profit using mean-reversion and pairs trading strategies with Interactive Brokers. This template is fully modular and ready to be integrated or scaled to assist the user in real world algorithmic trading. The focus was on minimizing the effort it took to get a foundation going for a trading system.
 
-## 🎯 Project Goals
+**Disclaimer: This is not a full fledged trading system but a template for you to build your own system upon. This template will work out of the box but is not set up for that use and the outcome will be unpredictable. It is recommended to first integrate your strategies and connectives into this template and then deploy it to production.**
 
-- **Primary Objective**: Generate €50 daily profit through automated trading
-- **Trading Strategies**: Mean-reversion and pairs trading
+## 🎯 Project Features
+
+- **Primary Objective**: Generate daily profit through automated trading
+- **Current Trading Strategies**: Mean-reversion and pairs trading
 - **Broker Integration**: Interactive Brokers (IBKR)
 - **Deployment**: Scalable from paper trading to live trading
 
@@ -95,7 +97,7 @@ AlgoB/
 ### Main Configuration (`config/config.yaml`)
 
 Key settings include:
-- Daily profit target: €50
+- Current Daily profit target: set to €50
 - Risk management parameters
 - Strategy parameters (mean-reversion, pairs trading)
 - Data sources and storage settings
@@ -181,7 +183,7 @@ pytest tests/ --cov=src --cov-report=html
 - Kill switch for system failures
 - Manual override capabilities
 
-## 📈 Performance Targets
+## 📈 Current Performance Targets
 
 - **Daily Profit Target**: €50
 - **Maximum Daily Drawdown**: 3%
@@ -215,7 +217,7 @@ pytest tests/ --cov=src --cov-report=html
 - Maintain audit trails
 
 ### Risk Disclaimer
-This system is for educational and research purposes. Trading involves substantial risk of loss. Past performance does not guarantee future results. Only trade with capital you can afford to lose.
+This system is for educational and research purposes. Trading involves substantial risk of loss. Past performance does not guarantee future results. Only trade with capital you can afford to lose. The Developer and Owner of this template [Huraira Ali](https://github.com/C6Sucrose) does not take any legal or moral responsibility in case of any lose of any kind.
 
 ## 📄 License
 
